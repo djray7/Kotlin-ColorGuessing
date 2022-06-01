@@ -1,5 +1,4 @@
-# Overview
-# Color Guessing game
+# Overview: Color Guessing Game
 I wanted to choose something simple and fun that would give me a basic understanding of the Kotlin language. 
 
 This is a game that presents two colors. The user responds with the correct colors that comes from mixing the two. The game loops through until the user answers all the questions correctly. The code is set up so that more levels can be added to add difficulty. 
