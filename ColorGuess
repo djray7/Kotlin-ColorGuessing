@@ -1,0 +1,149 @@
+//This is a game to guess the color of two other color combinations.
+//package my.demo
+//import kotlin.text.*
+
+open class MyParentClass {
+    // will eventually use urls of the respective colors
+    val red = ""
+    val blue = ""
+    val green = ""
+
+    val purple = "p"
+
+    //answers
+    val answer1 = "purple"
+    val answer2 = "yellow"
+    val answer3 = "orange"
+    val answers = arrayOf(answer1, answer2, answer3)
+
+    var level1: Int = 30
+    var level2: Int = 50
+    var level3: Int = 80
+
+}
+
+//class Colors: MyParentClass() { // control the colors
+//    fun redblue() { //mix red and blue
+//        println(purple)
+//    }
+//    fun redgreen() {// mix red and green
+//    }
+//}
+
+fun main() {
+    var p = MyParentClass()
+    var questions = Questions()
+    var c = Conditions()
+
+    while (c.points < p.level1) {
+
+        //question 1
+        questions.q1()
+        var a1 = userInput()
+        c.check1(a1)
+
+        //question 2
+        questions.q2()
+        var a2 = userInput()
+        c.check2(a2)
+
+        //question 3
+        questions.q3()
+        var a3 = userInput()
+        c.check3(a3)
+
+        if (c.points < 30) {
+            println("Questions incorrect: " + c.list + ". Try again?(yes/no)")
+            var redo = readLine()
+            if (redo == "no"){
+                println("Review and try again later!")
+                break
+            } else {
+                println("")
+            }
+        } else {
+            println("Congratulations, you know your colors!")
+        }
+    }
+
+
+}
+
+class Questions { //ask the questions
+    fun q1() {
+        println("Color mix 1: Red & Blue")
+    }
+    fun q2() {
+        println("Color mix 2: Red & Green")
+    }
+    fun q3() {
+        println("Color mix 3: Red & Yellow")
+    }
+}
+
+fun userInput(): String { //Gets input to questions
+    // use these in conditional statements to decide if correct or not
+    println("Result?: ")
+    val input = readLine()!!
+    return input
+}
+
+
+class Conditions: MyParentClass() {
+    var points: Int = 0
+//    val list: List<String> = emptyList()
+    val list : ArrayList<String> = arrayListOf()
+    fun check1(answer: String): Boolean {
+        if (answer != answer1) {
+            println("Incorrect")
+            points -= 10
+            addToList("Question 1")
+            println("")
+        } else {
+            println("Correct!")
+            points += 10
+            removeFromList("Question 3")
+            println("")
+        }
+        return true
+    }
+
+    fun check2(answer: String): Boolean {
+        if (answer != answer2) {
+            println("Incorrect")
+            points -= 10
+            addToList("Question 2")
+            println("")
+        } else {
+            println("Correct!")
+            points += 10
+            removeFromList("Question 3")
+            println("")
+        }
+        return true
+    }
+
+    fun check3(answer: String): Boolean {
+        if (answer != answer3) {
+            println("Incorrect")
+            points -= 10
+            addToList("Question 3")
+            println("")
+        } else {
+            println("Correct!")
+            points += 10
+            removeFromList("Question 3")
+            println("")
+        }
+        return true
+    }
+
+    fun addToList(answer: String) {
+        list.add(answer)
+    }
+
+    fun removeFromList(answer: String) {
+        list.remove(answer)
+    }
+}
+
