@@ -28,3 +28,4 @@ Libraries: None
 * add in possibilty of new levels
 * adapt into an actual app
 * add in imagery references for each color
+* add "if-statement" to the incorrect answer list, so that if the question is already on there it's not added twice. 
