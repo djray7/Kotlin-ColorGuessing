@@ -5,7 +5,7 @@ This is a game that presents two colors. The user responds with the correct colo
 
 This could be a fun code for elementary school aged children learning the colors. 
 
-[Software Demo Video]([https://youtu.be/fLtymxjABO4])
+[Software Demo Video](https://youtu.be/fLtymxjABO4)
 
 # Development Environment
 
