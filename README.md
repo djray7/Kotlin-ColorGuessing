@@ -5,9 +5,7 @@ This is a game that presents two colors. The user responds with the correct colo
 
 This could be a fun code for elementary school aged children learning the colors. 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video]([http://youtube.link.goes.here](https://youtu.be/fLtymxjABO4))
 
 # Development Environment
 
