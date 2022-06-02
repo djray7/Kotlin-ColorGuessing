@@ -18,10 +18,10 @@ Libraries: None
 
 # Useful Websites
 
-* [W3School]([http://url.link.goes.here](https://www.w3schools.com/kotlin/kotlin_variables.php))
-* [Kotlinlang]([http://url.link.goes.here](https://kotlinlang.org/docs/collections-overview.html#collection-types))
-* [tutorialkart]([http://url.link.goes.here](https://www.tutorialkart.com/kotlin/kotlin-mutable-list-remove/))
-* [techiedelight]([http://url.link.goes.here](https://www.techiedelight.com/add-new-element-array-kotlin/))
+* [W3School](https://www.w3schools.com/kotlin/kotlin_variables.php)
+* [Kotlinlang](https://kotlinlang.org/docs/collections-overview.html#collection-types)
+* [tutorialkart](https://www.tutorialkart.com/kotlin/kotlin-mutable-list-remove/)
+* [techiedelight](https://www.techiedelight.com/add-new-element-array-kotlin/)
 
 # Future Work
 
